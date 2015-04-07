@@ -4,7 +4,7 @@
 
 		var nav_script = doc.getElementById('jakiestfu-nav-api');
 		var frame = doc.createElement('iframe');
-		frame.setAttribute([
+		frame.setAttribute('style', [
 			"display: block;",
 			"position: fixed;",
 			"top: 0;",
