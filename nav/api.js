@@ -12,6 +12,8 @@
 			"left:0;",
 			"right:0;",
 			"border:none;",
+			"z-index: 999999;",
+ 			"height: 52px;"
 		].join(""));
 		body.insertBefore(frame,body.firstChild);
 
