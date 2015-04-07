@@ -14,7 +14,7 @@
 		].join(""));
 		nav_script.parentNode.insertBefore(frame, nav_script.nextSibling);
 
-		frame.src = "";
+		frame.src = "//jakiestfu.github.io/lab-tools/nav/";
 	};
 
 	window.onload = init;
