@@ -1,12 +1,12 @@
 {
-	"name": "lab-tools",
+	"name": "stfu",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"build": "./node_modules/grunt-cli/bin/grunt --force",
 		"build-watch": "./node_modules/grunt-cli/bin/grunt develop"
 	},
-	"repository": "git@github.com:jakiestfu/lab-tools.git",
+	"repository": "git@github.com:jakiestfu/stfu.git",
 	"dependencies": {
 		"bower": "1.3.12",
 		"grunt": "0.4.5",

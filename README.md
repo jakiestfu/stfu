@@ -1,4 +1,4 @@
-# lab-tools
+# stfu
 Tools used for my lab in jakiestfu.com
 
 ```html
