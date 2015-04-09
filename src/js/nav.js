@@ -1,5 +1,7 @@
 stfu.register('nav', function() {
 
+	var plugin = this;
+
 	var body = document.body;
 	var frame = document.createElement('iframe');
 	frame.setAttribute('style', [
@@ -15,6 +17,5 @@ stfu.register('nav', function() {
 	].join(""));
 	body.insertBefore(frame,body.firstChild);
 
-	frame.src = "./nav.html";
-
+	frame.src = plugin.name + '.html';
 });

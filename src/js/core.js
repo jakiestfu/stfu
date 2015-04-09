@@ -6,9 +6,11 @@
 	var self = this;
 
 	self[Namespace] = {
-		load: function(thingy, opts, cb) {
-			if(thingy in Registry) {
-				return Registry[thingy].call();
+		load: function(name, opts, cb) {
+			if(name in Registry) {
+				return Registry[name].call({
+					name: name
+				});
 			}
 		},
 		register: function(name, fn) {

@@ -29,7 +29,8 @@ module.exports = function (grunt) {
 		copy: {
 			iris: {
 				files: [
-					{expand: true,  cwd: 'src/html/', src: ['**/*'], dest: 'dist/'}
+					{expand: true,  cwd: 'src/html/', src: ['**/*'], dest: 'dist/p/'},
+					{expand: true,  cwd: 'src/svg/', src: ['**/*'], dest: 'dist/i/'}
 				]
 			}
 		},
@@ -74,6 +75,10 @@ module.exports = function (grunt) {
 			},
 			html: {
 				files: 'src/html/**/*.html',
+				tasks: ['copy']
+			},
+			svg: {
+				files: 'src/svg/**/*.svg',
 				tasks: ['copy']
 			}
 		}
