@@ -1,7 +1,7 @@
-body {
+body.nav {
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
+	font-size: @base-font-size;
 	overflow: hidden;
 }
 
@@ -14,25 +14,28 @@ nav {
 
 	font-family: @serif;
 	font-size: 1em;
-	color:#fff;
-	background: @secondary;
+	height: 52px;
+	color: @brand-primary;
+	background: @brand-secondary;
 
 	a {
-		color: #fff;
+		color: @brand-primary;
 		text-decoration: none;
 		transition: all 0.2s linear;
 	}
 
 	ul {
+		font-size: 0;
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
 		display: inline-block;
+		height: 100%;
 
 		a {
 			display: block;
 			padding: 10px 15px;
-			line-height: 32px;
+			line-height: @nav-line-height;
 			opacity: 0.8;
 			font-size: 1.2em;
 
@@ -43,7 +46,7 @@ nav {
 
 			&:hover {
 				opacity: 1;
-				border-color: #fff;
+				border-color: @brand-primary;
 
 				span {
 					border-color: transparent;
@@ -54,21 +57,22 @@ nav {
 		li {
 			vertical-align: top;
 			display: inline-block;
+			font-size: @base-font-size;
 
 			&.brand {
-				background: @primary;
+				background: @brand-primary;
 				margin-right: 20px;
 
 				a {
 					opacity: 1;
-					color: @secondary;
+					color: @brand-secondary;
 					font-family: "Freight Sans Pro";
 					font-weight: 800;
 					text-transform: uppercase;
 					position: relative;
 
 					&:hover span {
-						border-color: @secondary;
+						border-color: @brand-secondary;
 					}
 
 					&:after {
@@ -83,12 +87,20 @@ nav {
 					}
 				}
 			}
+
+			&.divider {
+				width: 2px;
+				height: 100%;
+				margin-right: 7px;
+				background: black;
+				opacity: 0.3;
+			}
 		}
 
 		.btn {
 			opacity: 1;
-			background: @primary;
-			color: @secondary;
+			background: @brand-primary;
+			color: @brand-secondary;
 			padding: 2px 15px;
 			margin: 7px 7px 0px 0px;
 			font-size: 1em;
@@ -99,6 +111,23 @@ nav {
 
 			&:hover {
 				opacity: 0.8;
+			}
+
+			&.btn-facebook {
+				color: @brand-primary;
+				background: @brand-facebook;
+			}
+			&.btn-twitter {
+				color: @brand-primary;
+				background: @brand-twitter;
+			}
+			&.btn-hackernews {
+				color: @brand-primary;
+				background: @brand-hackernews;
+			}
+			&.btn-reddit {
+				color: @brand-primary;
+				background: @brand-reddit;
 			}
 		}
 	}
